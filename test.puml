@@ -1,0 +1,57 @@
+@startgantt
+title Cycle de vie Agile (CVA) – IndustriousGame
+
+Project starts 2025-12-04
+saturday are closed
+sunday are closed
+
+' ---------- Sprint 0 ----------
+[ Sprint 0 : Cadrage & archi légère ] as [S0] lasts 5 days
+[S0] is colored in #CCE5FF
+
+' ---------- Sprints 1 à 6 ----------
+[ Sprint 1 : MVP (bilingue, comptes, blogue, opt-in) ] as [S1] lasts 10 days and starts at [S0]'s end
+[S1] is colored in #C8F7C5
+
+[ Sprint 2 : Admin de base + nouvelles ] as [S2] lasts 10 days and starts at [S1]'s end
+[S2] is colored in #C8F7C5
+
+[ Sprint 3 : Intégrations diffusion (Twitch/YouTube) ] as [S3] lasts 10 days and starts at [S2]'s end
+[S3] is colored in #FFF3CD
+
+[ Sprint 4 : Chat/voix + Back-office ] as [S4] lasts 10 days and starts at [S3]'s end
+[S4] is colored in #FFF3CD
+
+[ Sprint 5 : E-commerce & conformité (CASL/Loi 25) ] as [S5] lasts 10 days and starts at [S4]'s end
+[S5] is colored in #FAD7D7
+
+[ Sprint 6 : QA/UAT, formation, go-live ] as [S6] lasts 10 days and starts at [S5]'s end
+[S6] is colored in #D6EAF8
+
+' ---------- Jalons (étapes de livraison) ----------
+[ J1 : Kick-off & archi validées ] happens at [S0]'s end
+[ J2 : MVP démontrable ] happens at [S2]'s end
+[ J3 : Feature-Complete ] happens at [S4]'s end
+[ J4 : UAT & conformité OK (Go/No-Go) ] happens at [S6]'s start
+[ J5 : Go-Live & clôture ] happens at [S6]'s end
+
+' ---------- Contrôles / revues ----------
+[ R1 : Revue + Démo Sprint 1 ] happens at [S1]'s end
+[ R2 : Revue + Démo Sprint 2 ] happens at [S2]'s end
+[ R3 : Revue + Démo Sprint 3 ] happens at [S3]'s end
+[ R4 : Revue + Démo Sprint 4 ] happens at [S4]'s end
+[ R5 : Revue + Démo Sprint 5 ] happens at [S5]'s end
+[ R6 : Revue + Démo Sprint 6 ] happens at [S6]'s end
+
+legend right
+  Couleurs :
+    Sprint 0 (préparation) = bleu
+    MVP (S1-S2) = vert
+    Intégrations (S3-S4) = jaune
+    E-commerce & conformité (S5) = rouge clair
+    QA/UAT & Go-Live (S6) = bleu clair
+  Marqueurs :
+    J1..J5 = jalons de livraison
+    R1..R6 = revues/démos de fin de sprint
+endlegend
+@endgantt
